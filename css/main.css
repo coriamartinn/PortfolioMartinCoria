@@ -77,7 +77,7 @@ li {
       gap: 4rem; }
       .container .nav .nav-mobile a:hover,
       .container .nav .nav-mobile a.active {
-        background: #f5237a;
+        background: #e64e17;
         color: #cecece;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
         border-radius: 1rem;
@@ -124,7 +124,7 @@ li {
       margin: 1.5rem 1rem; }
       .container .nav-desktop a:hover,
       .container .nav-desktop a.active {
-        background: #f5237a;
+        background: #e64e17;
         color: #cecece;
         border-radius: 1rem;
         -webkit-border-radius: 1rem;
@@ -152,9 +152,62 @@ li {
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
   justify-content: center; }
-  .container-main .content-one,
-  .container-main .content-image {
+  .container-main .content-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: .5rem; }
+    .container-main .content-one .download-button {
+      position: relative;
+      border-width: 0;
+      color: #cecece;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 4px;
+      z-index: 1;
+      margin: 1rem 0;
+      cursor: pointer; }
+    .container-main .content-one .download-button .docs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      min-height: 40px;
+      padding: 0 10px;
+      border-radius: 4px;
+      z-index: 1;
+      background-color: #000000;
+      border: solid 1px #eeeeee;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
+    .container-main .content-one .download-button:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
+    .container-main .content-one .download {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 90%;
+      margin: 0 auto;
+      z-index: -1;
+      border-radius: 4px;
+      transform: translateY(0%);
+      background-color: #0BE63E;
+      border: solid 1px #01e0572d;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
+    .container-main .content-one .download-button:hover .download {
+      transform: translateY(100%); }
+    .container-main .content-one .download svg polyline, .container-main .content-one .download svg line {
+      animation: docs 1s infinite; }
+
+@keyframes docs {
+  0% {
+    transform: translateY(0%); }
+  50% {
+    transform: translateY(-15%); }
+  100% {
+    transform: translateY(0%); } }
   .container-main .content-image {
     display: flex;
     justify-content: center;
@@ -360,20 +413,31 @@ p {
   .footer .form .datos-text {
     font-size: 1.5rem;
     text-align: center;
-    font-weight: 500; }
+    font-weight: 500;
+    margin: .5rem; }
   .footer .form .form-style {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
   .footer .datos {
-    margin: 1rem; }
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
     .footer .datos .datos-text {
-      font-size: 14px;
+      font-size: 15px;
       color: #cecece;
-      font-weight: 450;
+      font-weight: 500;
       margin: 1rem;
       text-align: center; }
+    .footer .datos .datos-icon {
+      font-size: 1.7rem;
+      color: #cecece;
+      margin: 1rem; }
+    .footer .datos .datos-icon:hover {
+      color: #eeeeee; }
   .footer .copy .copy-text {
     font-size: 15px;
     color: #cecece;
