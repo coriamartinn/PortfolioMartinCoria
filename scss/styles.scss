@@ -1,0 +1,18 @@
+// RESET
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// IMPORTS
+@import "components/vars";
+@import "components/mixin";
+@import "components/header";
+@import "components/main";
+@import "components/section";
+@import "components/sobre";
+@import "components/general";
+@import "components/redes";
+@import "components/footer";

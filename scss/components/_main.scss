@@ -1,0 +1,51 @@
+/*MAIN*/
+
+.logo-main {
+    max-width: 17rem;
+}
+
+.title {
+    font-size: 3rem;
+    color: $color-text;
+    text-align: center;
+}
+
+.texts {
+    font-size: 1.7rem;
+    color: $rose;
+    text-align: end;
+}
+
+.container-main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+
+    .content-one,
+    .content-image {
+        margin:.5rem;
+    }
+
+    .content-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        transform: translateY(0px);
+        animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translatey(-50px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+}
+
+}
