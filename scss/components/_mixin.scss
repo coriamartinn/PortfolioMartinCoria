@@ -8,4 +8,8 @@
     background-blend-mode: soft-light;
 }
 
-//
+@mixin habilidades {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
