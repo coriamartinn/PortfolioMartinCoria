@@ -141,6 +141,14 @@ li {
   color: #cecece;
   text-align: center; }
 
+.sobre-text {
+  font-size: 1rem;
+  text-align: center;
+  color: #cecece;
+  font-weight: 500;
+  margin: .5rem 0;
+  text-transform: capitalize; }
+
 .texts {
   font-size: 1.4rem;
   color: #e64e17;
@@ -291,14 +299,6 @@ p {
   font-size: 2rem;
   text-transform: uppercase;
   color: #cecece; }
-
-.sobre-text {
-  font-size: 1rem;
-  text-align: center;
-  color: #cecece;
-  font-weight: 500;
-  margin: .5rem 0;
-  text-transform: capitalize; }
 
 .sobre-icon {
   font-size: 7rem;
