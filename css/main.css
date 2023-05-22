@@ -298,7 +298,7 @@ p {
   color: #cecece;
   font-weight: 500;
   margin: .5rem 0;
-  text-transform: lowercase; }
+  text-transform: capitalize; }
 
 .sobre-icon {
   font-size: 7rem;
