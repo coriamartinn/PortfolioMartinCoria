@@ -296,8 +296,9 @@ p {
   font-size: 1rem;
   text-align: center;
   color: #cecece;
-  font-weight: 525;
-  margin: .5rem 0; }
+  font-weight: 500;
+  margin: .5rem 0;
+  text-transform: lowercase; }
 
 .sobre-icon {
   font-size: 7rem;
