@@ -3,6 +3,68 @@
   padding: 0;
   box-sizing: border-box; }
 
+/*GENERALES*/
+.button-wpp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: none;
+  background-color: #30c04f;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0.5rem;
+  color: #cecece; }
+
+.button-wpp:hover {
+  background-color: #0BE63E; }
+
+/*FORMULARIO*/
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem; }
+  .form .datos-text {
+    margin: 1rem;
+    text-align: center; }
+  .form .form-style {
+    background-color: #000000;
+    padding: 1.7rem;
+    margin: 0.7rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7); }
+    .form .form-style .btn-contact {
+      min-width: 120px;
+      background: #000000;
+      color: #cecece;
+      height: 40px;
+      margin: 10px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease-in-out; }
+    .form .form-style .btn-contact:hover {
+      box-shadow: #cecece 0px 0px 0px 3px, #161616 0px 0px 0px 6px;
+      background: #000;
+      color: #cecece; }
+    .form .form-style .asunto {
+      padding-top: 0.7rem;
+      padding-bottom: 5rem; }
+    .form .form-style input {
+      height: 2rem;
+      margin: 1rem;
+      padding: 0.5rem;
+      border: none;
+      box-shadow: 0 3px 0 0 rgba(255, 255, 255, 0.7);
+      border-radius: 0.5rem; }
+
 /* NAVIGATION */
 body {
   font-family: "Fira Sans Condensed", sans-serif;
@@ -295,128 +357,6 @@ p {
   font-weight: bolder;
   color: #cecece; }
 
-/*GENERALES*/
-.button-wpp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  border: none;
-  background-color: #30c04f;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 0.5rem;
-  color: #cecece; }
-
-.button-wpp:hover {
-  background-color: #0BE63E; }
-
-/*FORMULARIO*/
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem; }
-  .form .datos-text {
-    margin: 1rem;
-    text-align: center; }
-  .form .form-style {
-    background-color: #000000;
-    padding: 1.7rem;
-    margin: 0.7rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7); }
-    .form .form-style .btn-contact {
-      min-width: 120px;
-      background: #000000;
-      color: #cecece;
-      height: 40px;
-      margin: 10px;
-      border: none;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      outline: none;
-      transition: all 0.3s ease-in-out; }
-    .form .form-style .btn-contact:hover {
-      box-shadow: #cecece 0px 0px 0px 3px, #161616 0px 0px 0px 6px;
-      background: #000;
-      color: #cecece; }
-    .form .form-style .asunto {
-      padding-top: 0.7rem;
-      padding-bottom: 5rem; }
-    .form .form-style input {
-      height: 2rem;
-      margin: 1rem;
-      padding: 0.5rem;
-      border: none;
-      box-shadow: 0 3px 0 0 rgba(255, 255, 255, 0.7);
-      border-radius: 0.5rem; }
-
-/*FOOTER*/
-.footer {
-  background-color: #000000; }
-  .footer .form .datos-text {
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: 500;
-    margin: 1rem 0.5rem 0 0; }
-  .footer .form .form-style {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  .footer .datos {
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .footer .datos .datos-text {
-      font-size: 15px;
-      color: #cecece;
-      font-weight: 500;
-      margin: 1rem;
-      text-align: center; }
-    .footer .datos .datos-icon {
-      font-size: 1.7rem;
-      color: #cecece;
-      margin: 1rem; }
-    .footer .datos .datos-icon:hover {
-      color: #eeeeee; }
-  .footer .copy .copy-text {
-    font-size: 15px;
-    color: #cecece;
-    font-weight: 500;
-    text-align: center;
-    padding: 0.5rem; }
-  .footer .content-redes {
-    background-color: #000000;
-    border-radius: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem; }
-    .footer .content-redes .redes-icon-ig,
-    .footer .content-redes .redes-icon-git,
-    .footer .content-redes .redes-icon-in {
-      font-size: 1.5rem;
-      color: #cecece;
-      border-radius: 1rem;
-      padding: 1rem; }
-    .footer .content-redes .redes-icon-ig:hover {
-      background-color: #E1306C; }
-    .footer .content-redes .redes-icon-git:hover {
-      background-color: #171515;
-      color: #cecece; }
-    .footer .content-redes .redes-icon-in:hover {
-      background-color: #0E76A8; }
-
 /*HABILIDADES*/
 .habilidades {
   min-height: 100vh;
@@ -692,3 +632,118 @@ p {
     transform: translateY(10px); }
   100% {
     transform: translateY(0px); } }
+
+/*estudios*/
+.estudios {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  padding: 3rem; }
+  .estudios .h2-estudios {
+    font-size: 3rem;
+    color: #cecece;
+    margin: 1rem; }
+  .estudios .content-estudio {
+    background-color: #000A4A;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    gap: 5rem;
+    margin: 2rem 0;
+    box-shadow: 0 0 10px 0 black; }
+    .estudios .content-estudio .primero-estudios {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start; }
+    .estudios .content-estudio .divisor-estudios {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: end; }
+  .estudios .title-estudios {
+    font-size: 1.3rem;
+    color: #cecece;
+    text-align: start;
+    letter-spacing: 3px;
+    margin: 0.5rem; }
+  .estudios .text-estudios {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #e64e17;
+    margin: 0 0.3rem;
+    font-weight: 500; }
+  .estudios .alt-estudios {
+    font-size: 0.8rem;
+    color: #cecece;
+    letter-spacing: 2px;
+    text-align: start;
+    margin: 0.5rem;
+    font-weight: 500; }
+
+/*FOOTER*/
+.footer {
+  background-color: #000000; }
+  .footer .form .datos-text {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin: 1rem 0.5rem 0 0; }
+  .footer .form .form-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .footer .datos {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .footer .datos .datos-text {
+      font-size: 15px;
+      color: #cecece;
+      font-weight: 500;
+      margin: 1rem;
+      text-align: center; }
+    .footer .datos .datos-icon {
+      font-size: 1.7rem;
+      color: #cecece;
+      margin: 1rem; }
+    .footer .datos .datos-icon:hover {
+      color: #eeeeee; }
+  .footer .copy .copy-text {
+    font-size: 15px;
+    color: #cecece;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5rem; }
+  .footer .content-redes {
+    background-color: #000000;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem; }
+    .footer .content-redes .redes-icon-ig,
+    .footer .content-redes .redes-icon-git,
+    .footer .content-redes .redes-icon-in {
+      font-size: 1.5rem;
+      color: #cecece;
+      border-radius: 1rem;
+      padding: 1rem; }
+    .footer .content-redes .redes-icon-ig:hover {
+      background-color: #E1306C; }
+    .footer .content-redes .redes-icon-git:hover {
+      background-color: #171515;
+      color: #cecece; }
+    .footer .content-redes .redes-icon-in:hover {
+      background-color: #0E76A8; }
