@@ -3,60 +3,87 @@
 .footer {
     background-color: $black;
 
-    .form {
+  .form {
 
-        .datos-text {
-            font-size: 1.5rem;
-            text-align: center;
-            font-weight: 500;
-            margin: 1rem .5rem 0 0;
-        }
-
-        .form-style {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
+    .datos-text {
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: 500;
+      margin: 1rem 0.5rem 0 0;
     }
 
-    .datos {
-        margin: .5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .form-style {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 
+  .datos {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-        .datos-text{
-            font-size: 15px;
-            color: $color-text;
-            font-weight: 500;
-            margin: 1rem;
-            text-align: center;
-        }
-        .datos-icon {
-            font-size: 1.7rem;
-            color: $color-text;
-            margin: 1rem;
-        }
-
-        .datos-icon:hover {
-            color: #eeeeee;
-        }
-        
+    .datos-text {
+      font-size: 15px;
+      color: $color-text;
+      font-weight: 500;
+      margin: 1rem;
+      text-align: center;
+    }
+    .datos-icon {
+      font-size: 1.7rem;
+      color: $color-text;
+      margin: 1rem;
     }
 
-    .copy {
-        
-
-        .copy-text {
-            font-size: 15px;
-            color: $color-text;
-            font-weight: 500;
-            text-align: center;
-            padding: .5rem;
-        }
+    .datos-icon:hover {
+      color: #eeeeee;
     }
+  }
+
+  .copy {
+    .copy-text {
+      font-size: 15px;
+      color: $color-text;
+      font-weight: 500;
+      text-align: center;
+      padding: 0.5rem;
+    }
+  }
+
+  .content-redes {
+    background-color: $black;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    .redes-icon-ig,
+    .redes-icon-git,
+    .redes-icon-in {
+      font-size: 1.5rem;
+      color: $color-text;
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+
+    .redes-icon-ig:hover {
+      background-color: $instagram;
+    }
+
+    .redes-icon-git:hover {
+      background-color: $github;
+      color: $color-text;
+    }
+
+    .redes-icon-in:hover {
+      background-color: $linkein;
+    }
+  }
 }

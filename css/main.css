@@ -155,7 +155,7 @@ li {
   text-transform: uppercase; }
 
 .container-main {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
@@ -233,12 +233,20 @@ li {
 
 /*SECOND INFO*/
 .container-sec {
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   align-items: center;
   justify-content: center;
   justify-items: center;
   gap: 2rem; }
+
+.title-h2-sec {
+  font-size: 2rem;
+  color: #cecece;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-weight: 650;
+  text-align: center; }
 
 .book {
   position: relative;
@@ -287,25 +295,6 @@ p {
   font-weight: bolder;
   color: #cecece; }
 
-/*SOBRE MI*/
-.sobre-mi {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem .5rem; }
-
-.sobre-title {
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #cecece; }
-
-.sobre-icon {
-  font-size: 7rem;
-  color: #cecece;
-  margin: 3rem .5rem;
-  padding: 2rem 0; }
-
 /*GENERALES*/
 .button-wpp {
   display: flex;
@@ -315,11 +304,11 @@ p {
   height: 45px;
   border-radius: 100%;
   border: none;
-  background-color: #30C04F;
+  background-color: #30c04f;
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: .5rem;
+  margin: 0.5rem;
   color: #cecece; }
 
 .button-wpp:hover {
@@ -338,8 +327,8 @@ p {
   .form .form-style {
     background-color: #000000;
     padding: 1.7rem;
-    margin: .7rem;
-    border-radius: .5rem;
+    margin: 0.7rem;
+    border-radius: 0.5rem;
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7); }
     .form .form-style .btn-contact {
       min-width: 120px;
@@ -358,18 +347,79 @@ p {
       background: #000;
       color: #cecece; }
     .form .form-style .asunto {
-      padding-top: .7rem;
+      padding-top: 0.7rem;
       padding-bottom: 5rem; }
     .form .form-style input {
       height: 2rem;
       margin: 1rem;
-      padding: .5rem;
+      padding: 0.5rem;
       border: none;
       box-shadow: 0 3px 0 0 rgba(255, 255, 255, 0.7);
-      border-radius: .5rem; }
+      border-radius: 0.5rem; }
+
+/*FOOTER*/
+.footer {
+  background-color: #000000; }
+  .footer .form .datos-text {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin: 1rem 0.5rem 0 0; }
+  .footer .form .form-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .footer .datos {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .footer .datos .datos-text {
+      font-size: 15px;
+      color: #cecece;
+      font-weight: 500;
+      margin: 1rem;
+      text-align: center; }
+    .footer .datos .datos-icon {
+      font-size: 1.7rem;
+      color: #cecece;
+      margin: 1rem; }
+    .footer .datos .datos-icon:hover {
+      color: #eeeeee; }
+  .footer .copy .copy-text {
+    font-size: 15px;
+    color: #cecece;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5rem; }
+  .footer .content-redes {
+    background-color: #000000;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem; }
+    .footer .content-redes .redes-icon-ig,
+    .footer .content-redes .redes-icon-git,
+    .footer .content-redes .redes-icon-in {
+      font-size: 1.5rem;
+      color: #cecece;
+      border-radius: 1rem;
+      padding: 1rem; }
+    .footer .content-redes .redes-icon-ig:hover {
+      background-color: #E1306C; }
+    .footer .content-redes .redes-icon-git:hover {
+      background-color: #171515;
+      color: #cecece; }
+    .footer .content-redes .redes-icon-in:hover {
+      background-color: #0E76A8; }
 
 /*HABILIDADES*/
 .habilidades {
+  min-height: 100vh;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -496,7 +546,7 @@ p {
 .back-scss::before,
 .back-react::before {
   position: absolute;
-  content: ' ';
+  content: " ";
   display: block;
   width: 160px;
   height: 160%;
@@ -642,81 +692,3 @@ p {
     transform: translateY(10px); }
   100% {
     transform: translateY(0px); } }
-
-/*REDES*/
-.redes {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-  .redes .content-redes {
-    background-color: #000000;
-    border-radius: 2rem;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    gap: 5rem;
-    margin-bottom: 4rem;
-    padding: 1rem; }
-
-.redes-icon-ig,
-.redes-icon-git,
-.redes-icon-in {
-  font-size: 2rem;
-  padding: 1rem;
-  color: #cecece;
-  border-radius: 1rem; }
-
-.redes-icon-ig:hover {
-  background-color: #E1306C;
-  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.7); }
-
-.redes-icon-git:hover {
-  background-color: #171515;
-  color: #cecece;
-  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.7); }
-
-.redes-icon-in:hover {
-  background-color: #0E76A8;
-  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.7); }
-
-/*FOOTER*/
-.footer {
-  background-color: #000000; }
-  .footer .form .datos-text {
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: 500;
-    margin: 1rem .5rem 0 0; }
-  .footer .form .form-style {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  .footer .datos {
-    margin: .5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .footer .datos .datos-text {
-      font-size: 15px;
-      color: #cecece;
-      font-weight: 500;
-      margin: 1rem;
-      text-align: center; }
-    .footer .datos .datos-icon {
-      font-size: 1.7rem;
-      color: #cecece;
-      margin: 1rem; }
-    .footer .datos .datos-icon:hover {
-      color: #eeeeee; }
-  .footer .copy .copy-text {
-    font-size: 15px;
-    color: #cecece;
-    font-weight: 500;
-    text-align: center;
-    padding: .5rem; }

@@ -13,7 +13,7 @@ button.addEventListener('click',()=>{
 
 
 // letras tipeandose
-var typed = new Typed('.typed', {
+let typed = new Typed('.typed', {
 	strings: [
 		'<i class="texts">App Developer</i>',
 		'<i class="texts">Freelance</i>',
