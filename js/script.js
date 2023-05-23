@@ -117,3 +117,27 @@ let typedSql = new Typed('.typed-sql', {
 });
 
 
+//nav active
+
+window.addEventListener('scroll', function() {
+	let navLinks = document.querySelectorAll('nav ul li a'); // Obtener todos los enlaces de navegación
+	let currentSection = '';
+	let sections = document.querySelectorAll('.section'); // Obtener todas las secciones
+  
+	sections.forEach(function(section) {
+	  let sectionTop = section.offsetTop;
+	  let sectionHeight = section.clientHeight;
+	  if (window.pageYOffset >= sectionTop - sectionHeight / 2) {
+		currentSection = section.getAttribute('id');
+	  }
+	});
+  
+	// Agregar clase activa al enlace correspondiente y eliminarla de los demás
+	navLinks.forEach(function(link) {
+	  link.classList.remove('active');
+	  if (link.getAttribute('href').substring(1) === currentSection) {
+		link.classList.add('active');
+	  }
+	});
+  });
+
