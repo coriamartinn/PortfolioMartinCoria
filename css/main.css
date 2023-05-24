@@ -3,6 +3,75 @@
   padding: 0;
   box-sizing: border-box; }
 
+/*TABLET*/
+@media screen and (min-width: 701px) {
+  /*Projects*/
+  .container-sec .mediaq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 3rem; }
+  /*SKILLS*/
+  .habilidades .mediaq-skills {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem; }
+  /*ESTUDIOS*/
+  .estudios .mediaq-estudios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem; }
+  /*FOOTER*/
+  .footer .form {
+    display: block; }
+    .footer .form input {
+      width: 500px; }
+    .footer .form .form-styles {
+      display: block; } }
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+  /*main*/
+  .container-main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem; }
+    .container-main .sobre-text {
+      width: 70%; }
+  /*Projects*/
+  .container-sec .mediaq {
+    grid-template-columns: repeat(3, 1fr); }
+  /*skills*/
+  .habilidades .mediaq-skills {
+    grid-template-columns: repeat(3, 1fr); }
+  /*footer*/
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    .footer .form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: .7rem;
+      padding: 0 1rem; }
+      .footer .form input {
+        width: 300px; }
+    .footer .copy {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
+
+@media screen and (min-width: 1300px) {
+  .container-sec .mediaq {
+    grid-template-columns: repeat(4, 1fr); }
+  .habilidades .mediaq-skills {
+    grid-template-columns: repeat(4, 1fr); }
+  .estudios .mediaq-estudios {
+    grid-template-columns: repeat(4, 1fr); }
+  .footer {
+    width: 100%; } }
+
 /*GENERALES*/
 .button-wpp {
   display: flex;
@@ -20,7 +89,7 @@
   color: #cecece; }
 
 .button-wpp:hover {
-  background-color: #0BE63E; }
+  background-color: #0be63e; }
 
 /*FORMULARIO*/
 .form {
@@ -68,7 +137,7 @@
 /* NAVIGATION */
 body {
   font-family: "Fira Sans Condensed", sans-serif;
-  background: #000A4A; }
+  background: #000a4a; }
 
 a {
   font-size: 17px;
@@ -77,7 +146,7 @@ a {
   padding: 1rem;
   font-weight: bold;
   letter-spacing: 1px;
-  transition: .3s; }
+  transition: 0.3s; }
 
 li {
   list-style: none; }
@@ -88,7 +157,7 @@ li {
   border: none;
   cursor: pointer;
   font-size: 2rem;
-  margin: 0 .8rem; }
+  margin: 0 0.8rem; }
 
 .logo,
 .logo-desktop {
@@ -208,7 +277,7 @@ li {
   text-align: center;
   color: #cecece;
   font-weight: 500;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   text-transform: capitalize; }
 
 .texts {
@@ -219,7 +288,6 @@ li {
 .container-main {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   align-items: center;
   justify-content: center; }
   .container-main .content-one {
@@ -268,7 +336,8 @@ li {
       transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
     .container-main .content-one .download-button:hover .download {
       transform: translateY(100%); }
-    .container-main .content-one .download svg polyline, .container-main .content-one .download svg line {
+    .container-main .content-one .download svg polyline,
+    .container-main .content-one .download svg line {
       animation: docs 1s infinite; }
 
 @keyframes docs {
@@ -359,11 +428,16 @@ p {
 
 /*HABILIDADES*/
 .habilidades {
-  min-height: 100vh;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  justify-items: center; }
+  justify-content: center; }
+  .habilidades .mediaq-skills {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 3rem; }
   .habilidades .title-h2-hab {
     font-size: 2rem;
     color: #cecece;
@@ -440,6 +514,17 @@ p {
   border-radius: 5px;
   overflow: hidden; }
 
+.front-other,
+.back-other {
+  background-color: #00d9ff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden; }
+
 .back {
   width: 100%;
   height: 100%;
@@ -480,11 +565,20 @@ p {
   align-items: center;
   overflow: hidden; }
 
+.back-other {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden; }
+
 .back::before,
 .back-css::before,
 .back-js::before,
 .back-scss::before,
-.back-react::before {
+.back-react::before,
+.back-other::before {
   position: absolute;
   content: " ";
   display: block;
@@ -548,6 +642,14 @@ p {
   color: #cecece; }
 
 .front-react {
+  background-image: url(../images/react.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(180deg);
+  color: #cecece; }
+
+.front-other {
   background-image: url(../images/react.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -644,9 +746,10 @@ p {
   .estudios .h2-estudios {
     font-size: 3rem;
     color: #cecece;
-    margin: 1rem; }
+    margin: 1rem;
+    text-align: center; }
   .estudios .content-estudio {
-    background-color: #000A4A;
+    background-color: #000a4a;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -741,9 +844,9 @@ p {
       border-radius: 1rem;
       padding: 1rem; }
     .footer .content-redes .redes-icon-ig:hover {
-      background-color: #E1306C; }
+      background-color: #e1306c; }
     .footer .content-redes .redes-icon-git:hover {
       background-color: #171515;
       color: #cecece; }
     .footer .content-redes .redes-icon-in:hover {
-      background-color: #0E76A8; }
+      background-color: #0e76a8; }

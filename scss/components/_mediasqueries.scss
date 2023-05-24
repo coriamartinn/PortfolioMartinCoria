@@ -1,0 +1,140 @@
+/*TABLET*/
+@media screen and (min-width: 701px) {
+  /*Projects*/
+  .container-sec {
+    .mediaq {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+    }
+  }
+    /*SKILLS*/
+
+    .habilidades {
+
+      .mediaq-skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+      }
+    }
+    
+    /*ESTUDIOS*/
+
+    .estudios {
+
+        .mediaq-estudios {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+    }
+
+    /*FOOTER*/
+
+    .footer {
+        
+        .form {
+            display: block;
+            input {
+                width: 500px;
+            }
+
+            .form-styles {
+                display: block;
+            }
+        }
+    }
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1024px) {
+    /*main*/
+
+    .container-main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+
+        .sobre-text {
+            width: 70%;
+        }
+    }
+
+    /*Projects*/
+
+    .container-sec {
+        
+        .mediaq {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    /*skills*/
+    .habilidades {
+
+        .mediaq-skills {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    /*footer*/
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: .7rem;
+            padding: 0 1rem;
+
+            input {
+                width: 300px;
+            }
+        }
+
+        .copy {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1300px) {
+    
+    .container-sec {
+        .mediaq {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .habilidades {
+
+        .mediaq-skills {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .estudios {
+
+        .mediaq-estudios {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .footer {
+        width: 100%;
+
+        .form {
+
+        }
+    }
+}
