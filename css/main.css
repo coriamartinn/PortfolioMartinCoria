@@ -35,8 +35,6 @@
   .container-main {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem; }
-    .container-main .sobre-text {
-      width: 70%; }
   /*Projects*/
   .container-sec .mediaq {
     grid-template-columns: repeat(3, 1fr); }
@@ -278,7 +276,8 @@ li {
   color: #cecece;
   font-weight: 500;
   margin: 0.5rem 0;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  width: 70%; }
 
 .texts {
   font-size: 1.4rem;
@@ -428,6 +427,7 @@ p {
 
 /*HABILIDADES*/
 .habilidades {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
